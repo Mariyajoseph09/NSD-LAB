@@ -6,4 +6,4 @@ do
 	reversed=$((reversed*10+digit))
 	num=$((num/10))
 done
-echo "the reversed number is $reversed"
+Echo "the reversed number is $reversed"
