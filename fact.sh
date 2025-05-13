@@ -1,11 +1,11 @@
-echo "Enter the number :"
-read n
-i=1
-f=1
-while [ $i -le $n ]
+factorial() {
+fact=1
+for (( i=1; i<=$1; i++ ))
 do
-f=$((f*i))
-i=$((i+1))
+fact=$((fact * i))
 done
-echo "Factorial of $n = $f"
-
+echo $fact
+}
+echo -n "enter a number:"
+read num
+echo "factorial of $num is:" $(factorial $num)

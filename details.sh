@@ -1,8 +1,7 @@
-echo -n "Enter the  name:"
+echo -n "Enter the name:"
 read name
-echo -n "Enter your roll number:"
+echo -n "Enter your rollno:"
 read rollno
 echo -n "Enter the mark:"
 read mark
-echo -e "\n ROLLNO: $rollno \nNAME: $name \nMARK: $mark"
-
+echo -e "  \nROLLNO: $rollno \nNAME: $name \nMARK: $mark"

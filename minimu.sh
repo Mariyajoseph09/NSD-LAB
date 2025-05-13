@@ -5,10 +5,9 @@ if [ $num2 -lt $min ];then
 	min=$num2
 fi
 if [ $num3 -lt $min ];then
-       min=$num3
+	min=$num3
 fi
 if [ $num4 -lt $min ];then
 	min=$num4
 fi
-echo "the minimum number is : $min"
- 
+echo "the minimum number is:$min"
