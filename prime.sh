@@ -1,4 +1,4 @@
-echo "Enter the number:"
+echo enter a number:
 read n
 i=2
 f=0
@@ -7,7 +7,7 @@ then
 while [ $i -le $((n/2)) ]
 do
 if [ $((n%i)) -eq 0 ]
-then
+then 
 f=1
 break
 fi
@@ -18,7 +18,7 @@ f=1
 fi
 if [ $f -eq 1 ]
 then
-echo $n is not a prime number
+echo $n is not prime number
 else
-echo $n is a prime number
+echo $n is prime number
 fi
