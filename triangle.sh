@@ -1,6 +1,15 @@
-echo "enter the height of triangle"
-read h
-echo "enter the base of triangle"
+echo "enter length of side A:"
+read a
+echo "Enter length of side B:"
 read b
-area=$(echo "scale =2; 0.5 * $b * $h"|bc)
-echo "area of triangle : $area"
+echo "Enter length of side C:"
+read c
+if [ $a -eq $b ] && [ $b -eq $c ]
+then
+echo "The triangle is equilateral"
+elif [ $a -eq $b ] || [ $b -eq $c ] || [ $a -eq $c ]
+then
+echo "The triangle is isosceles"
+else
+echo "The triangle is scalene"
+fi
