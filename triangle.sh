@@ -1,14 +1,6 @@
-echo "Enter the first side: "
-read a
-echo "Enter the second side: "
+echo "enter the height of triangle"
+read h
+echo "enter the base of triangle"
 read b
-echo "Enter the third side: "
-read c
-
-if (( a + b > c && a + c > b && b + c > a ))
-then
-    echo "The numbers $a, $b, and $c can form a triangle."
-else
-    echo "The numbers $a, $b, and $c cannot form a triangle."
-fi
-
+area=$(echo "scale =2; 0.5 * $b * $h"|bc)
+echo "area of triangle : $area"
